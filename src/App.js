@@ -63,18 +63,17 @@ function App() {
   };
   useEffect(() => {
     randomize();
+    // eslint-disable-next-line
   }, []);
-
   return (
     <div className="App">
       <div className="header">
         <div className="title">avatar</div>
         <div className="subtitle">create your own character</div>
-        {/* <div className="divider"></div> */}
       </div>
       <div className="avatar-group gap-30">
         <div>
-          <div className="pixel-borders avatar-wrapper">
+          <div className="avatar-wrapper">
             <Avatar
               body={body}
               eyes={eyes}
